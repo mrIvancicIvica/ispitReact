@@ -1,5 +1,6 @@
 import './App.css';
 import GitUserForm from './components/GitUserForm';
+import GitUsersRepos from './components/GitUsersRepos';
 import ResulGitHubUsers from './components/ResulGitHubUsers';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <h1>GitHubUsers</h1>
       <GitUserForm />
       <ResulGitHubUsers />
+      <GitUsersRepos />
     </>
   );
 }

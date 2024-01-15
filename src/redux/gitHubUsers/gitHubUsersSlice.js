@@ -14,8 +14,11 @@ export const gitHubUsersSlice = createSlice({
     getRepo: (state, action) => {
       state.users = action.payload;
     },
+    resetUser: (state) => {
+      state.users = '';
+    },
   },
 });
 
-export const { findUser } = gitHubUsersSlice.actions;
+export const { findUser, resetUser } = gitHubUsersSlice.actions;
 export default gitHubUsersSlice.reducer;

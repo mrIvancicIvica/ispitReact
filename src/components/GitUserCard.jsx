@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-import { UseDispatch, useDispatch } from 'react-redux';
+import {useDispatch } from 'react-redux';
 
 const GitUserCard = ({ gituser: { avatar_url, name, location, bio } }) => {
   const dispatch = useDispatch()
-  
   return (
     <div onClick={()=> dispatch() } className="ui card">
       <div className="image">
